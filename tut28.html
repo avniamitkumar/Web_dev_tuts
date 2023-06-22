@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial</title>
+</head>
+<style>
+    .container
+    {
+        width:100%;
+        height: 544px;
+        border:2px solid black;
+        display:flex;/* Initialize the container as a flex box */
+         /* Flex properties for a flex container */
+         /*flex-direction: column;*/
+       /*  flex-direction: row-reverse;
+         flex-direction: column-reverse; /* flex-direction: row; (Default value of flex-direction is row) */
+        /* flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+             /* flex-wrap: wrap-reverse; */
+             /* This is a shorthand for flex-direction: and flex-wrap: ;; */
+            /* flex-flow: row-reverse wrap; */
+            
+    }
+    .box
+    {
+        border:2px solid blue;
+        height:100px;
+        width:100px;
+        background-color: aquamarine;
+        margin:10px;
+        padding:5px;
+    }
+    #box1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+
+        }
+        #box2{
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+        #box3{
+            /* flex: 2 2 230px; */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+
+            }
+</style>
+<body>
+    <h3>This is a flexbox tutorial</h3>
+    <div class="container">
+    <div class="box" id="box1">FIRST BOX</div>
+    <div class="box" id="box2">SECOND BOX</div>
+    <div class="box" id="box3">THIRD BOX</div>
+    <!-- <div class="box" id="box4">FOURTH BOX</div>
+    <div class="box" id="box5">FIFTH BOX</div>
+    <div class="box" id="box6">SIXTH BOX</div> -->
+    </div>
+</body>
+</html>

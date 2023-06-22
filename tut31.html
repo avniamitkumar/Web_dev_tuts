@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: rebeccapurple;
+        color:whitesmoke;
+        font-weight: bold;
+        text-align: center;
+    }
+   /* div p{
+        background-color:aqua;
+        color:blue;
+        font-weight: bold;
+    }*/
+    /*div  li p{
+        background-color:aqua;
+        color:blue;
+        font-weight: bold;
+    }*/
+    /*div>p{
+        background-color:aqua;
+        color:blue;
+        font-weight: bold;
+    }*/
+    div+p{
+          color: white;
+          background-color:#D2302C;
+      }
+</style>
+<body>
+    <h1>This is more on CSS selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"> <p>i am inside div p li</p></li>
+
+            </ul>
+            <p>this is direct child of row</p>
+            
+        </div>
+        <p>this is of class container</p>
+    </div>
+    <p>i am outside everybody</p>
+</body>
+</html>
